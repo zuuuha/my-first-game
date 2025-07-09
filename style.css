@@ -1,0 +1,138 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  color: rgb(125, 45, 200);
+  text-align: center;
+}
+
+#left{
+  background-color: lightgrey;
+  width: 15%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  height: 100% ;
+  padding:10px ;
+}
+#right {
+  background-color: lightgrey;
+  width: 15%;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  height: 100%;
+  padding: 10px;
+}
+
+.plantholder{
+  position: relative;
+  height: 13%;
+  left: -10px;
+}
+
+.plant{
+  position: absolute;
+  max-width: 150%;
+  max-height: 150%;
+  z-index: 2;
+}
+#left div img{
+  width : 110px;
+}
+#plant5{
+  position: absolute;
+  top: 50px;
+}
+
+#right div img {
+  width: 110px;
+  right: -10%;
+}
+#plant7 {
+  position: absolute;
+  top: 50px;
+}
+#plant8 {
+  position: absolute;
+  top: 30px;
+}
+#plant9 {
+  position: absolute;
+  top: 60px;
+}
+#plant10 {
+  position: absolute;
+  top: 50px;
+}
+h1:hover {
+  color: blue;
+}
+
+
+#fishtank {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  width: 60%;
+  height: 70%;
+}
+
+.jarwall{
+  height: 70%;
+  width: 102.3%;
+  left: 12%;
+  background:lightblue;
+  position: absolute;
+  border-radius: 3%;
+}
+.jartop{
+  position: relative;
+  width: 80%;
+  height: 8%;
+  background-color: grey;
+  top: 4%;
+  left: 23%;
+  opacity: 60%;
+  border-radius: 20%;
+}
+
+.dirt{
+  position: relative;
+  background-color: burlywood;
+  width: 102.3%;
+  left: 12%;
+  height: 8%;
+  bottom: -62%;
+}
+.glosstop{
+  position: absolute;
+  background-color: whitesmoke;
+  width: 10px;
+  height: 70px;
+  border-radius: 30%;
+  left: 20%;
+  top: 39%;
+}
+.glossdown {
+  position: absolute;
+  background-color: whitesmoke;
+  width: 10px;
+  height: 15px;
+  border-radius: 30%;
+  left: 20%;
+  top:56%;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
+.plant{
+  animation: slide-in 2s ease-in;
+}
+
